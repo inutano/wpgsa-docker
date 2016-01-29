@@ -3,7 +3,7 @@
 # VERSION 0.2.2
 
 # Pull base image.
-FROM jupyter/datascience-notebook:latest
+FROM jupyter/datascience-notebook:4.0
 
 MAINTAINER Tazro Inutano Ohta, inutano@gmail.com
 
