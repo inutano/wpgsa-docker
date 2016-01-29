@@ -1,6 +1,6 @@
 # Docker container for wPGSA
 # See https://github.com/eiryo-kawakami/wPGSA
-# VERSION 0.2.1
+# VERSION 0.2.2
 
 # Pull base image.
 FROM jupyter/datascience-notebook:latest
