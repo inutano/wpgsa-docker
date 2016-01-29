@@ -1,6 +1,6 @@
 # Docker container for wPGSA
 # See https://github.com/eiryo-kawakami/wPGSA
-# VERSION 0.1
+# VERSION 0.2
 
 # Pull base image.
 FROM jupyter/datascience-notebook:latest
@@ -13,6 +13,7 @@ RUN cd /home/jovyan/work && \
   git clone https://github.com/inutano/wPGSA && \
   cd /home/jovyan/work/wPGSA && \
   chmod 755 /home/jovyan/work/wPGSA/wPGSA.py && \
-  ln -s /home/jovyan/work/wPGSA/wPGSA.py /usr/bin/wpgsa
+  ln -s /home/jovyan/work/wPGSA/wPGSA.py /usr/bin/wpgsa && \
+  ln -s /home/jovyan/work/wPGSA/hclust.py /usr/bin/hclust
 
 USER jovyan
