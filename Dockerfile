@@ -3,7 +3,7 @@
 # VERSION 0.2.2
 
 # Pull base image.
-FROM jupyter/datascience-notebook:4.0
+FROM inutano/research-base:0.1.1
 
 MAINTAINER Tazro Inutano Ohta, inutano@gmail.com
 
@@ -17,4 +17,4 @@ RUN cd /home/jovyan/work && \
   ln -s /home/jovyan/work/wPGSA/wPGSA.py /usr/bin/wpgsa && \
   ln -s /home/jovyan/work/wPGSA/hclust.py /usr/bin/hclust
 
-USER jovyan
+USER nijntje
