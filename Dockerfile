@@ -1,6 +1,6 @@
 # Docker container for wPGSA
 # See https://github.com/eiryo-kawakami/wPGSA
-# VERSION 0.2.3
+# VERSION 0.3.1
 
 # Pull base image.
 FROM inutano/research-base:0.1.1
