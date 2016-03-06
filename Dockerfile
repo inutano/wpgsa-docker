@@ -1,6 +1,6 @@
 # Docker container for wPGSA
 # See https://github.com/eiryo-kawakami/wPGSA
-# VERSION 0.4.0
+# VERSION 0.4.1
 
 # Pull base image.
 FROM inutano/research-base:0.1.1
@@ -12,7 +12,7 @@ USER root
 ENV CONTAINER_USER nijntje
 
 RUN cd /home/$CONTAINER_USER/work && \
-  git clone -b 0.3.0 https://github.com/inutano/wPGSA && \
+  git clone -b 0.3.1 https://github.com/inutano/wPGSA && \
   cd /home/$CONTAINER_USER/work/wPGSA && \
   chmod 755 /home/$CONTAINER_USER/work/wPGSA/wPGSA.py && \
   chmod 755 /home/$CONTAINER_USER/work/wPGSA/hclust.py && \
